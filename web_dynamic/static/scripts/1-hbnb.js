@@ -1,9 +1,8 @@
 $(document).ready(function () {
-
-  let amenitiesChecked = {};
+  const amenitiesChecked = {};
 
   // Wriye function that inserts list of amenities checked into the DOM
-  function updateAmenities() {
+  function updateAmenities () {
     const amenitiesList = Object.values(amenitiesChecked).join(', ');
     $('.amenities h4').text(amenitiesList);
   }
@@ -21,5 +20,4 @@ $(document).ready(function () {
 
     updateAmenities();
   });
-
 });
